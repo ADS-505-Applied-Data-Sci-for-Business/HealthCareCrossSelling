@@ -16,6 +16,7 @@ This is a final project for ADS-505: Business Analytics
 * Exploratory Data Analysis
 * Data Visualization
 * Predictive Modeling
+* Performance Measures
 
 
 ### Technologies & Platforms
@@ -81,16 +82,32 @@ insurance provider.
 
 
 ## Exploratory Data Analysis
-
 Univariate Analysis
+- histograms showing distributions of values in each column
 
 Multivariate Analysis
-
+- categorical columns plotted against target 'Response'
+- scatterplots
 
 ## Data Pre-Processing
-
+- feature engineered by binning 'Age' and 'Vehicle_Age' - we wanted to see if there were higher response rates by the bin
+- dropped missing values
+- handled outliers - didn't drop them but kept and squished into the top 1 and bottom 3 percentile
 
 ## Features Selection
+- Recursive Feature Elimination method
+- Random Forest Feature Importances
+- Pearson's high correlated features
+- Pearson's correlation feature to target
 
+## Modeling
+- Linear Models: Logistic Regression, Stochastic Gradient Descent
+- Ensemble Models: AdaBoost, RandomForest
+- Neural Networks: MLPClassifier (classifical neural network model)
+- General Models: Decision Tree
 
-## Modeling & Evaluation
+## Evaluation - Performance Measures
+- All scores included, confusion matrices, reports, summaries
+- ROC Curve plotting performance of 5 models
+- Random Forest yielded best performance for prediction modeling
+
